@@ -28,6 +28,7 @@ public class FCMInitializer {
             if (FirebaseApp.getApps().isEmpty()) {
                 FirebaseApp.initializeApp(options);
                 logger.info("Firebase application has been initialized");
+                System.out.println("Firebase application has been initialized");
             }
         } catch (IOException e) {
             logger.error(e.getMessage());
